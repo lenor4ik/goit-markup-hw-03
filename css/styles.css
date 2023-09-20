@@ -9,7 +9,21 @@ body {
 ul {
   list-style: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .header-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -59,6 +73,7 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  padding: 188px 242px 48px 242px;
 }
 
 .main-order-btn {
