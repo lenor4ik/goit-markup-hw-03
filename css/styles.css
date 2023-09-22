@@ -49,11 +49,11 @@ ul {
 }
 .header-navigation {
   display: flex;
-  gap: 76px;
 }
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 .header-menu {
   display: flex;
@@ -74,6 +74,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-span-studio {
   color: #2e2f42;
@@ -96,6 +97,8 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -142,6 +145,10 @@ ul {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   padding: 16px 32px;
 }
 
@@ -149,17 +156,18 @@ ul {
 .main-order-btn:focus {
   background-color: #404bbf;
 }
-
+.main-text .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .main-menu-list {
   display: flex;
   gap: 24px;
   padding-left: 156px;
   padding-right: 156px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .main-menu-item {
-  width: calc((100% - 24px * 3) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 .main-menu-name {
   color: #2e2f42;
@@ -167,6 +175,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .main-menu-info {
@@ -178,12 +187,19 @@ ul {
 
 .main-team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title-item {
   background: #ffffff;
   margin-bottom: 120px;
-  width: calc((100% - 24px * 3) / 4);
+  flex-basis: calc((100% - 72px) / 4);
+}
+name-job-title {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
 }
 .team-title {
   color: #2e2f42;
@@ -193,8 +209,7 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -205,8 +220,8 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
   margin-bottom: 8px;
+  text-align: center;
 }
 .team-title-list {
   display: flex;
@@ -220,8 +235,13 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
+  text-align: center;
 }
+.main-work-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .main-work-list {
   display: flex;
   gap: 48px 24px;
@@ -238,12 +258,17 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .main-wofk-item {
-  width: calc((100% - 24px * 2) / 3);
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.work-name-type {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .main-work-name {
@@ -252,7 +277,6 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -261,16 +285,13 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
 }
 
 .footer {
   background: #2e2f42;
   display: flex;
   flex-direction: column;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
-  padding-left: 156px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -292,4 +313,8 @@ ul {
   letter-spacing: 0.02em;
   max-width: 264px;
   margin-top: 17px;
+}
+.footer-logo link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
