@@ -3,6 +3,19 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -15,31 +28,45 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
 ul {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
 }
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding-: 0 15px;
   outline: 2px solid red;
 }
-.container .header-menu {
+.header-navigation {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.container .header-contacts-list {
-  display: flex;
+  flex-grow: 1;
   justify-content: space-between;
 }
-.header-contacts {
+
+.container header-container {
+  display: flex;
+  gap: 332px;
+}
+.header-menu {
   display: flex;
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 40px;
 }
 .header-logo {
   color: #4d5ae5;
@@ -107,9 +134,7 @@ ul {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   cursor: pointer;
-  margin-bottom: 188px;
-  margin-left: 636px;
-  margin-right: 635px;
+  padding: 16px 32px;
 }
 
 .main-order-btn:hover,
@@ -117,13 +142,16 @@ ul {
   background-color: #404bbf;
 }
 
-.container .main-menu-list {
+.main-menu-list {
   display: flex;
   gap: 24px;
-}
-.main-menu-item {
+  padding-left: 156px;
+  padding-right: 156px;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.main-menu-item {
+  width: calc((100%-24px * 3) / 4);
 }
 .main-menu-name {
   color: #2e2f42;
@@ -138,7 +166,6 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
 }
 
 .main-team {
@@ -148,6 +175,7 @@ ul {
 .team-title-item {
   background: #ffffff;
   margin-bottom: 120px;
+  width: calc((100%-24px * 3) / 4);
 }
 .team-title {
   color: #2e2f42;
@@ -171,9 +199,11 @@ ul {
   margin-top: 32px;
   margin-bottom: 8px;
 }
-.container .team-title-list {
+.team-title-list {
   display: flex;
   gap: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 .team-job-title {
   color: #434455;
@@ -183,7 +213,7 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 32px;
 }
-.container .main-work-list {
+.main-work-list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -200,6 +230,10 @@ ul {
   padding-top: 120px;
   padding-bottom: 72px;
   margin-bottom: 32px;
+}
+
+.main-wofk-item {
+  width: calc((100%-24px * 2) / 3);
 }
 
 .main-work-name {
@@ -221,6 +255,11 @@ ul {
 
 .footer {
   background: #2e2f42;
+  height: 312px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -240,4 +279,5 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  flex-basis: 264px;
 }
