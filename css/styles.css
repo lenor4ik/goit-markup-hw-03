@@ -49,13 +49,11 @@ ul {
 }
 .header-navigation {
   display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
 }
 
 .container header-container {
   display: flex;
-  gap: 332px;
+  gap: 76px;
 }
 .header-menu {
   display: flex;
@@ -88,6 +86,7 @@ ul {
 }
 .header-contacts {
   font-style: normal;
+  margin: 0 auto;
 }
 .header-menu-link {
   color: #2e2f42;
