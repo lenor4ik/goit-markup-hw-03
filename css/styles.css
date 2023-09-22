@@ -51,11 +51,11 @@ ul {
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
 }
 .header-menu {
   display: flex;
@@ -158,10 +158,11 @@ ul {
 .main-order-btn:focus {
   background-color: #404bbf;
 }
-.main-text .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+.main-text {
+  padding: 120px 0;
 }
+
 .main-menu-list {
   display: flex;
   gap: 24px;
@@ -171,6 +172,7 @@ ul {
 .main-menu-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+
 .main-menu-name {
   color: #2e2f42;
   font-size: 20px;
@@ -196,8 +198,9 @@ ul {
   background: #ffffff;
   margin-bottom: 120px;
   flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-name-job-title {
+.name-job-title {
   display: flex;
   flex-direction: column;
   padding: 32px 0;
@@ -211,7 +214,6 @@ name-job-title {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title-name {
@@ -227,8 +229,6 @@ name-job-title {
 .team-title-list {
   display: flex;
   gap: 24px;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 .team-job-title {
   color: #434455;
@@ -246,8 +246,6 @@ name-job-title {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 
 .main-work-title {
@@ -302,6 +300,8 @@ name-job-title {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-span-studio {
   color: #f4f4fd;
@@ -312,9 +312,4 @@ name-job-title {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 17px;
-}
-.footer-logo link {
-  display: inline-block;
-  margin-bottom: 16px;
 }
