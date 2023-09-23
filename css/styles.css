@@ -75,7 +75,6 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 .header-span-studio {
   color: #2e2f42;
@@ -87,7 +86,7 @@ ul {
 }
 .header-contacts {
   font-style: normal;
-  margin: 0 auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
