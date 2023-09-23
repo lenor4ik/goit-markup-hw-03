@@ -84,9 +84,6 @@ ul {
   margin-right: 76px;
 }
 
-.header-logo link {
-  padding: 24px 0;
-}
 .header-contacts {
   font-style: normal;
   margin-left: auto;
@@ -100,6 +97,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: block;
+  padding: 24px 0;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
