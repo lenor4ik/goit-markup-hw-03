@@ -47,7 +47,6 @@ ul {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid red;
 }
 .header-navigation {
   display: flex;
@@ -84,7 +83,6 @@ ul {
 
 .container .header-logo {
   padding-top: 25px;
-  padding-left: 156px;
   padding-bottom: 25px;
 }
 .header-contacts {
@@ -99,8 +97,7 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: block;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -124,9 +121,7 @@ ul {
 }
 
 .main-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .main-title {
   color: #ffffff;
@@ -135,7 +130,7 @@ ul {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
   max-width: 496px;
 }
 
@@ -194,13 +189,10 @@ ul {
 
 .team-title-item {
   background: #ffffff;
-  margin-bottom: 120px;
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .name-job-title {
-  display: flex;
-  flex-direction: column;
   padding: 32px 0;
 }
 .team-title {
@@ -222,7 +214,6 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  text-align: center;
 }
 .team-title-list {
   display: flex;
